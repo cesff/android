@@ -3,7 +3,7 @@ import 'package:prakerin/config/palette.dart';
 
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
-   Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Palette.primaryColor,
       elevation: 0.0,
@@ -20,8 +20,8 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
         ),
       ],
     );
-   }
+  }
 
-    @override
+  @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 }
