@@ -39,92 +39,93 @@ class _HomeScreenState extends State<HomeScreen> {
               bottomRight: Radius.circular(40.0),
             )),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text(
-                  'COVID-19',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                CountryDropdown(
-                  countries: ['CN', 'FR', 'IN', 'IT', 'UK', 'USA'],
-                  country: _country,
-                  onChanged: (val) => setState(() => _country = val),
-                ),
-              ],
-            ),
-            SizedBox(height: screenHeight * 0.03),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'Are you feeling sick?',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                SizedBox(height: screenHeight * 0.01),
-                Text(
-                  'If you feel sick with any COVID-19 symptoms, please call or text us immediately for help',
-                  style: const TextStyle(
-                    color: Colors.white70,
-                    fontSize: 15.0,
-                  ),
-                ),
-                SizedBox(height: screenHeight * 0.03),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    FlatButton.icon(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 10.0,
-                        horizontal: 20.0,
-                      ),
-                      onPressed: () {},
-                      color: Colors.red,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                      ),
-                      icon: const Icon(
-                        Icons.phone,
+                Center(
+                  child: new Center(
+                    child: new Text(
+                      'CORONA VIRUS ',
+                      style: const TextStyle(
                         color: Colors.white,
+                        fontSize: 43.0,
+                        fontWeight: FontWeight.bold,
                       ),
-                      label: Text(
-                        'Call Now',
-                        style: Styles.buttonTextStyle,
-                      ),
-                      textColor: Colors.white,
                     ),
-                    FlatButton.icon(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 10.0,
-                        horizontal: 20.0,
-                      ),
-                      onPressed: () {},
-                      color: Colors.blue,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                      ),
-                      icon: const Icon(
-                        Icons.chat_bubble,
-                        color: Colors.white,
-                      ),
-                      label: Text(
-                        'Send SMS',
-                        style: Styles.buttonTextStyle,
-                      ),
-                      textColor: Colors.white,
-                    ),
-                  ],
-                )
+                  ),
+                  //         CountryDropdown(
+                  //           countries: ['CN', 'FR', 'IN', 'IT', 'UK', 'USA'],
+                  //           country: _country,
+                  //           onChanged: (val) => setState(() => _country = val),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //     SizedBox(height: screenHeight * 0.03),
+                  //     Column(
+                  //       crossAxisAlignment: CrossAxisAlignment.start,
+                  //       children: <Widget>[
+                  //         Text(
+                  //           'Are you feeling sick?',
+                  //           style: const TextStyle(
+                  //             color: Colors.white,
+                  //             fontSize: 22.0,
+                  //             fontWeight: FontWeight.w600,
+                  //           ),
+                  //         ),
+                  //         SizedBox(height: screenHeight * 0.01),
+                  //         Text(
+                  //           'If you feel sick with any COVID-19 symptoms, please call or text us immediately for help',
+                  //           style: const TextStyle(
+                  //             color: Colors.white70,
+                  //             fontSize: 15.0,
+                  //           ),
+                  //         ),
+                  //         SizedBox(height: screenHeight * 0.03),
+                  //         Row(
+                  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //           children: <Widget>[
+                  //             FlatButton.icon(
+                  //               padding: const EdgeInsets.symmetric(
+                  //                 vertical: 10.0,
+                  //                 horizontal: 20.0,
+                  //               ),
+                  //               onPressed: () {},
+                  //               color: Colors.red,
+                  //               shape: RoundedRectangleBorder(
+                  //                 borderRadius: BorderRadius.circular(30.0),
+                  //               ),
+                  //               icon: const Icon(
+                  //                 Icons.phone,
+                  //                 color: Colors.white,
+                  //               ),
+                  //               label: Text(
+                  //                 'Call Now',
+                  //                 style: Styles.buttonTextStyle,
+                  //               ),
+                  //               textColor: Colors.white,
+                  //             ),
+                  //             FlatButton.icon(
+                  //               padding: const EdgeInsets.symmetric(
+                  //                 vertical: 10.0,
+                  //                 horizontal: 20.0,
+                  //               ),
+                  //               onPressed: () {},
+                  //               color: Colors.blue,
+                  //               shape: RoundedRectangleBorder(
+                  //                 borderRadius: BorderRadius.circular(30.0),
+                  //               ),
+                  //               icon: const Icon(
+                  //                 Icons.chat_bubble,
+                  //                 color: Colors.white,
+                  //               ),
+                  //               label: Text(
+                  //                 'Send SMS',
+                  //                 style: Styles.buttonTextStyle,
+                  //               ),
+                  //               textColor: Colors.white,
+                  //             ),
+                  //           ],
+                ),
               ],
             ),
           ],
@@ -141,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Prevention Tips',
+              'Cara Pencegahan',
               style: const TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.w600,
@@ -200,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Do you own tets!',
+                  'Kesehatan',
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 18.0,
@@ -209,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(height: screenHeight * 0.01),
                 Text(
-                  'Follow the instrcution \nto do your own test.',
+                  'Adalah Hal Yang\nUtama!',
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16.0,
